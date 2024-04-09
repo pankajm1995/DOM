@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The Document Object</h1>
+    <h1>The getElementsByTagName() Method</h1>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p>I am p1</p>
+    <p>I am p2</p>
+    <div>I am box</div>
+</body>
+
+</html>
+
+<script>
+    const ul=document.getElementsByTagName("ul")
+   for(let i=0;i<ul.length;i++)
+   {
+    console.log(ul[i].innerText);
+   }
+
+    const p = document.getElementsByTagName("p")
+    for(let i=0;i<p.length;i++)
+    {
+        console.log(p[i].innerText);
+    }
+</script>

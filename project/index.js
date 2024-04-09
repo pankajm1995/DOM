@@ -1,4 +1,4 @@
-let form=document.getElementById("signup")
+let form = document.getElementById("signup")
 
 form.addEventListener("submit",(e)=>
 {
@@ -6,11 +6,11 @@ form.addEventListener("submit",(e)=>
 
     let name1=document.getElementById("name").value
     let email1=document.getElementById("email").value
-    let con=document.getElementById("country").value
-    let mob =document.getElementById("phone").value
-    let pass= document.getElementById("password").value
+    let con = document.getElementById("country").value
+    let mob=document.getElementById("phone").value
+    let pass=document.getElementById("password").value
 
-    let user={
+    let data={
         name:name1,
         email:email1,
         country:con,
@@ -18,7 +18,7 @@ form.addEventListener("submit",(e)=>
         password:pass
     }
 
-    console.log(user);
+    console.log(data);
 })
 
 let form1 = document.getElementById("signin")

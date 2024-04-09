@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h1">The Document Object</h1>
+    <h1>The getElementsByTagName() Method</h1>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p>I am p1</p>
+    <p>I am p2</p>
+    <div>I am box</div>
+</body>
+
+</html>
+
+<script>
+   const h1= document.getElementById("h1")
+
+   h1.style.color="green"
+
+   const ListOfArray= document.getElementsByTagName("li")
+
+   for(let i=0;i<ListOfArray.length;i++)
+   {
+    ListOfArray[i].style.color="teal"
+    ListOfArray[i].style.backgroundColor="yellow"
+    ListOfArray[i].style.margin="10px"
+   }
+
+   const Paragraph= document.getElementsByTagName("p")
+
+   for(let i=0;i<Paragraph.length;i++)
+   {
+    Paragraph[i].style.color="green"
+    Paragraph[i].style.backgroundColor="red"
+   }
+
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="csk" id="dhoni">I am Dhoni from Chennai</p>
+    <p class="mi">I am Sachin from Mumbai</p>
+    <p class="rcb">I am Kohli from Banglore</p>
+    <p class="mi">I am Rohit from Mumbai</p>
+    <p class="rcb" id="abd">I am ABD from Banglore</p>
+    <p class="csk">I am Raina from Chennai</p>
+</body>
+</html>
+<script>
+    /*
+    when we get by classname then we get only array
+    */
+    const mumbai= document.getElementsByClassName("mi")
+
+    console.log(mumbai);
+   console.log(mumbai.length);
+   console.log(mumbai[0].innerText);
+   console.log(mumbai[1].innerText);
+
+   const che=document.getElementsByClassName("rcb")
+   console.log((che));
+   console.log(che.length);
+   console.log(che[0].innerText);
+</script>
