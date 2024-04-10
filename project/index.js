@@ -37,5 +37,7 @@ form1.addEventListener("submit",(e)=>
         password:pass2
     }
 
-    console.log(data);
+    for (var key of Object.keys(data)) {
+       console.table(key, " : ", data[key])
+      }
 })

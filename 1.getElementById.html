@@ -11,6 +11,10 @@
         <p id="find">Bye Geekyshows</p>
     <script>
         var result = document.getElementById("geek");
+        let text = "";
+        for (let x in result) {
+            text += result[x];
+            } 
         document.write(result)
         console.log(result);
     </script>

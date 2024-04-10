@@ -6,12 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+    <select id="slt">
+        <option value="Male">Male</option>
+        <option value="FeMale">FeMale</option>
+    </select>
     <button id="btn">Click me</button>
     <h1 id="bs"></h1>
 </body>
 </html>
 <script>
-    document.getElementById("btn").addEventListener("click",()=>{
-        alert("Hello")
-    })
+   var e = document.getElementById("slt");
+                var selectedItem = e.options[e.selectedIndex].value;
+                alert(selectedItem);
+
+
 </script>

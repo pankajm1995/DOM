@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="csk" id="dhoni">I am Dhoni from Chennai</p>
+    <p class="mi">I am Sachin from Mumbai</p>
+    <p class="rcb">I am Kohli from Banglore</p>
+    <p class="mi">I am Rohit from Mumbai</p>
+    <p class="rcb" id="abd">I am ABD from Banglore</p>
+    <p class="csk">I am Raina from Chennai</p>
+
+    <p>This is first p element</p>
+    <p class="second">This is a second element</p>
+    <p id="third">This is sa third p element</p>
+</body>
+</html>
+<script>
+    let mi=document.querySelectorAll(".mi")
+    for(let i=0;i<mi.length;i++)
+    {
+        mi[i].style.color="red"
+    }
+
+    let csk= document.querySelectorAll(".csk")
+    for(let i=0;i<csk.length;i++)
+    {
+        csk[i].style.color="yellow"
+    }
+    let rcb= document.querySelectorAll(".rcb")
+    for(let i=0;i<rcb.length;i++)
+    {
+        rcb[i].style.color="green"
+    }
+</script>
+
+// class name se style
+<!-- <script>
+   let mi= document.getElementsByClassName("mi")
+   let rcb= document.getElementsByClassName("rcb")
+   let csk= document.getElementsByClassName("csk")
+   for(let i=0;i<mi.length;i++)
+   {
+    mi[i].style.color="yellow"
+   }
+   
+</script> -->
+//querry selector always show 1st value
+<!-- <script>
+let a= document.querySelector("p")
+console.log(a);
+
+let b= document.querySelector(".second")
+console.log(b);
+let c= document.querySelector("#third")
+console.log(c);
+</script> -->
+
+//querry selector all
+
+<!-- <script>
+    let a= document.querySelectorAll("p")
+
+    for(let i=0;i<a.length;i++)
+    {
+        a[i].style.color="red"
+    }
+</script> -->
