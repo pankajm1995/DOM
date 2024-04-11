@@ -15,9 +15,16 @@
 </body>
 </html>
 <script>
-   var e = document.getElementById("slt");
-                var selectedItem = e.options[e.selectedIndex].value;
-                alert(selectedItem);
+ let a= document.getElementById("slt")
+
+ let b= document.getElementById("btn")
+
+ let c= document.getElementById("bs")
+
+ a.addEventListener("click",()=>
+{
+    c.innerText=a.value
+})
 
 
 </script>
