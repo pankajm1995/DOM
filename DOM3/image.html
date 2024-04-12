@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click Me</button>
+    <!-- <div id="s"></div> -->
+</body>
+</html>
+<script>
+    let btn= document.querySelector("button")
+
+    btn.addEventListener("click",()=>
+
+    {
+        let image= document.createElement("img")
+
+        image.setAttribute("src","https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg")
+      
+
+        document.getElementById("s").append(image)
+    })
+</script>
