@@ -32,4 +32,6 @@ form.addEventListener("submit",(e)=>
 
             tbody.append(tr)
         }
+      
+        
 })
